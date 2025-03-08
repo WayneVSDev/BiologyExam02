@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biology Mock Exam - Test 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .question {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .question h3 {
+            margin-top: 0;
+            color: #0066cc;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        .short-answer {
+            width: 100%;
+            height: 100px;
+            margin-top: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        #submit-btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #submit-btn:hover {
+            background-color: #0052a3;
+        }
+        #results {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .correct {
+            color: green;
+            font-weight: bold;
+        }
+        .incorrect {
+            color: red;
+            font-weight: bold;
+        }
+        .explanation {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Biology Mock Exam – Test 1</h1>
+    <form id="exam-form">
+        <!-- Multiple-Choice Questions -->
+        <div class="question" id="q1">
+            <h3>1. What is the primary function of the cell membrane?</h3>
+            <div class="options">
+                <input type="radio" name="q1" value="a"> a) To synthesize proteins<br>
+                <input type="radio" name="q1" value="b"> b) To act as a selective barrier controlling the movement of substances<br>
+                <input type="radio" name="q1" value="c"> c) To store genetic information<br>
+                <input type="radio" name="q1" value="d"> d) To produce energy<br>
+            </div>
+        </div>
+
+        <div class="question" id="q2">
+            <h3>2. Which of the following particles is most likely to pass through a lipid bilayer by simple diffusion?</h3>
+            <div class="options">
+                <input type="radio" name="q2" value="a"> a) A large, polar glucose molecule<br>
+                <input type="radio" name="q2" value="b"> b) A small, non-polar oxygen molecule<br>
+                <input type="radio" name="q2" value="c"> c) A charged sodium ion<br>
+                <input type="radio" name="q2" value="d"> d) A large protein<br>
+            </div>
+        </div>
+
+        <div class="question" id="q3">
+            <h3>3. What is the main difference between integral and peripheral membrane proteins?</h3>
+            <div class="options">
+                <input type="radio" name="q3" value="a"> a) Integral proteins are hydrophilic, while peripheral proteins are hydrophobic<br>
+                <input type="radio" name="q3" value="b"> b) Integral proteins are embedded within the lipid bilayer, while peripheral proteins are attached to its surface<br>
+                <input type="radio" name="q3" value="c"> c) Integral proteins are temporary, while peripheral proteins are permanent<br>
+                <input type="radio" name="q3" value="d"> d) Integral proteins function in transport, while peripheral proteins function in cell division<br>
+            </div>
+        </div>
+
+        <div class="question" id="q4">
+            <h3>4. What is the role of aquaporins in the cell membrane?</h3>
+            <div class="options">
+                <input type="radio" name="q4" value="a"> a) To transport ions against their concentration gradient<br>
+                <input type="radio" name="q4" value="b"> b) To facilitate the diffusion of water molecules across the membrane<br>
+                <input type="radio" name="q4" value="c"> c) To act as enzymes for lipid synthesis<br>
+                <input type="radio" name="q4" value="d"> d) To anchor the cytoskeleton to the membrane<br>
+            </div>
+        </div>
+
+        <div class="question" id="q5">
+            <h3>5. Which of the following best describes facilitated diffusion?</h3>
+            <div class="options">
+                <input type="radio" name="q5" value="a"> a) The movement of molecules against their concentration gradient using energy<br>
+                <input type="radio" name="q5" value="b"> b) The passive movement of molecules through the lipid bilayer without assistance<br>
+                <input type="radio" name="q5" value="c"> c) The passive movement of molecules through channel or carrier proteins<br>
+                <input type="radio" name="q5" value="d"> d) The movement of water molecules across a selectively permeable membrane<br>
+            </div>
+        </div>
+
+        <!-- Short-Answer Questions -->
+        <div class="question" id="q11">
+            <h3>11. a) List three locations of lipid bilayers in cells. b) Explain why the hydrophobic core of a lipid bilayer forms a barrier to hydrophilic particles. (6 marks)</h3>
+            <textarea class="short-answer" name="q11"></textarea>
+        </div>
+
+        <div class="question" id="q12">
+            <h3>12. a) Describe the process of simple diffusion across a lipid bilayer. b) Outline how the polarity of a molecule affects its rate of diffusion across a lipid membrane. (6 marks)</h3>
+            <textarea class="short-answer" name="q12"></textarea>
+        </div>
+
+        <div class="question" id="q13">
+            <h3>13. a) Define osmosis and predict the direction of water movement in a cell placed in a hypertonic solution. b) Outline the structure and function of aquaporin proteins in the cell membrane. (8 marks)</h3>
+            <textarea class="short-answer" name="q13"></textarea>
+        </div>
+
+        <button type="submit" id="submit-btn">Submit Exam</button>
+    </form>
+
+    <div id="results" style="display: none;">
+        <h2>Your Results</h2>
+        <div id="results-content"></div>
+    </div>
+
+    <script>
+        const correctAnswers = {
+            q1: 'b',
+            q2: 'b',
+            q3: 'b',
+            q4: 'b',
+            q5: 'c',
+            q11: `a) Locations: Cell membrane, nuclear envelope, endoplasmic reticulum. b) Explanation: The hydrophobic core, formed by fatty acid tails, repels hydrophilic particles because they are polar or charged and cannot easily interact with the non-polar, hydrophobic environment.`,
+            q12: `a) Description: Simple diffusion is the passive movement of molecules across a lipid bilayer from high to low concentration, without energy or proteins, until equilibrium. b) Effect: Non-polar molecules diffuse rapidly due to compatibility with the hydrophobic core, while polar molecules diffuse slowly or not at all without assistance.`,
+            q13: `a) Definition: Osmosis is the passive movement of water across a selectively permeable membrane from high water concentration (low solute) to low water concentration (high solute). Prediction: In a hypertonic solution, water moves out of the cell, causing it to shrink. b) Structure: Aquaporins are integral proteins forming channels with a hydrophilic pore. Function: They facilitate rapid water diffusion, increasing osmosis rate.`
+        };
+
+        const explanations = {
+            q1: `The cell membrane regulates what enters and exits the cell, maintaining homeostasis.`,
+            q2: `Small, non-polar molecules like oxygen easily pass through the hydrophobic core of the lipid bilayer via simple diffusion.`,
+            q3: `Integral proteins are embedded within the lipid bilayer, while peripheral proteins are attached to its surface, reflecting their structural roles.`,
+            q4: `Aquaporins are channel proteins that allow rapid water movement across the membrane.`,
+            q5: `Facilitated diffusion is passive and requires specific proteins to help molecules move down their concentration gradient.`,
+            q11: `Correct answer: a) Cell membrane, nuclear envelope, endoplasmic reticulum. b) The hydrophobic core repels hydrophilic particles due to its non-polar nature, acting as a barrier.`,
+            q12: `Correct answer: a) Simple diffusion is passive movement from high to low concentration without energy or proteins. b) Non-polar molecules diffuse faster due to compatibility with the hydrophobic core; polar molecules need assistance.`,
+            q13: `Correct answer: a) Osmosis is passive water movement from high to low water concentration; in hypertonic solution, water exits the cell. b) Aquaporins are integral proteins with hydrophilic pores, facilitating rapid water diffusion.`
+        };
+
+        document.getElementById('exam-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let score = 0;
+            let total = 0;
+            let resultsHTML = '';
+
+            // Check multiple-choice questions
+            for (let i = 1; i <= 5; i++) {
+                const question = `q${i}`;
+                const userAnswer = document.querySelector(`input[name="${question}"]:checked`);
+                const correctAnswer = correctAnswers[question];
+                total += 2;
+
+                if (userAnswer && userAnswer.value === correctAnswer) {
+                    score += 2;
+                    resultsHTML += `<p class="correct">Question ${i}: Correct!</p>`;
+                } else {
+                    resultsHTML += `<p class="incorrect">Question ${i}: Incorrect. Your answer: ${userAnswer ? userAnswer.value : 'Not answered'}. Correct answer: ${correctAnswer}</p>`;
+                    resultsHTML += `<div class="explanation">Explanation: ${explanations[question]}</div>`;
+                }
+            }
+
+            // Check short-answer questions
+            for (let i = 11; i <= 13; i++) {
+                const question = `q${i}`;
+                const userAnswer = document.querySelector(`textarea[name="${question}"]`).value.trim().toLowerCase();
+                const correctAnswer = correctAnswers[question].toLowerCase();
+                const marks = i === 13 ? 8 : 6;
+                total += marks;
+
+                // Simple keyword-based scoring for short answers
+                const keywords = correctAnswer.split(' ').filter(word => word.length > 3);
+                let matchedKeywords = 0;
+                keywords.forEach(keyword => {
+                    if (userAnswer.includes(keyword)) {
+                        matchedKeywords++;
+                    }
+                });
+                const scoreForQuestion = Math.round((matchedKeywords / keywords.length) * marks);
+
+                score += scoreForQuestion;
+                if (scoreForQuestion === marks) {
+                    resultsHTML += `<p class="correct">Question ${i}: Correct! (Score: ${scoreForQuestion}/${marks})</p>`;
+                } else {
+                    resultsHTML += `<p class="incorrect">Question ${i}: Partially correct or incorrect. Your answer: "${userAnswer}". Correct answer: "${correctAnswers[question]}" (Score: ${scoreForQuestion}/${marks})</p>`;
+                    resultsHTML += `<div class="explanation">Explanation: ${explanations[question]}</div>`;
+                }
+            }
+
+            // Display results
+            resultsHTML = `<p>Your total score: ${score}/${total} (${Math.round((score / total) * 100)}%)</p>` + resultsHTML;
+            document.getElementById('results-content').innerHTML = resultsHTML;
+            document.getElementById('results').style.display = 'block';
+            document.getElementById('submit-btn').disabled = true;
+        });
+    </script>
+</body>
+</html>
